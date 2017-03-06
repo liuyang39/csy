@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>下拉菜单</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/detail.css">
+</head>
+<body>
+<div id='meun'>
+	<div id='phone'>
+		<ul v-model='$index'>
+	        <li>苹果1</li>
+	        <li>苹果2</li>
+	        <li>苹果3</li>
+	        <li>苹果4</li>
+	        <li>苹果5</li>
+	        <li>苹果6</li>
+	        <li>苹果7</li>
+	        <li>苹果8</li>
+	        <li>苹果9</li>
+	        <li>苹果10</li>
+	        <li>苹果1</li>
+	        <li>苹果2</li>
+	        <li>苹果3</li>
+	        <li>苹果4</li>
+	        <li>苹果5</li>
+	        <li>苹果6</li>
+	        <li>苹果7</li>
+	        <li>苹果8</li>
+	        <li>苹果9</li>
+	        <li>苹果10</li>
+        </ul>
+	</div>
+	<div id='model'>
+		<ul>
+			<li>型号1</li>
+			<li>型号1</li>
+			<li>型号1</li>
+			<li>型号1</li>
+			<li>型号1</li>
+			<li>型号1</li>
+			<li>型号1</li>
+			<li>型号1</li>
+			<li>型号1</li>
+			<li>型号1</li>
+			<li>型号1</li>
+			<li>型号1</li>
+			<li>型号1</li>
+			<li>型号1</li>
+			<li>型号1</li>
+			<li>型号1</li>
+			<li>型号1</li>
+			<li>型号1</li>
+		</ul>
+		<ul>
+			<li>型号2</li>
+			<li>型号2</li>
+			<li>型号2</li>
+			<li>型号2</li>
+		</ul>
+		<ul>
+			<li>型号3</li>
+			<li>型号3</li>
+			<li>型号3</li>
+			<li>型号3</li>
+		</ul>
+		<ul>
+			<li>型号4</li>
+			<li>型号4</li>
+			<li>型号4</li>
+			<li>型号4</li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript" src='js/jquery-1.12.3.js'></script>
+<script type="text/javascript" src='js/vue.js'></script>
+<script type="text/javascript">
+	$('#phone ul li').eq(0).addClass('active')  //选中的手机类型背景为白色;
+	$('#model ul').eq(0).css('display','block');
+	$('#phone ul li').click(function(){
+		$(this).addClass('active').siblings() .removeClass('active');
+	})
+</script>
+</body>
+</html>

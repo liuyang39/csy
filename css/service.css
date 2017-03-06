@@ -1,0 +1,96 @@
+body,html{
+	background: #FFFFFF;
+	font-size: 129.375px;
+}
+*{margin: 0;padding: 0;}
+body {
+    font-size: 0.14rem;
+    min-width: 320px;
+    max-width: 740px;
+    min-height: 100%;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+body, textarea, input, button, select, keygen, legend {
+    font: 14px/1.14 "PingFang SC","Microsoft YaHei","Hiragino Sans GB W3",Helvetica,"Heiti SC","Droid Sans","Droidsansfallback",sans-serif;
+    color: #333;
+    outline: 0;
+}
+li{
+	list-style: none;}
+	a{text-decoration: none;
+		}
+		
+.tabCard{
+	    height: 0.60rem;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #e1e1e1;
+    background: #FFFFFF;
+}
+#segmentedControl {
+	width: 1.3rem;
+    height: 0.30rem;
+    line-height: 0.30rem;
+    margin: 0.15rem auto;
+    border-radius: 8px;
+    border: 1px solid #f9be00;
+    border-radius: 6px;
+    background-color: transparent;
+    -webkit-touch-callout: none;
+}
+.mui-segmented-control .mui-control-item {
+	color: #333;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    text-align: center;
+    font-size: 0.12rem;
+    border-left: none;
+}
+.mui-segmented-control .mui-control-item.mui-active {
+    color: #fff;
+    background-color: #f9be00;
+}
+.mui-control-item{
+	border-right: none;
+}
+.searchd{
+    width: 0.36rem;
+    height: 0.36rem;
+    display: block;
+    position: absolute;
+    right: 0.26rem;
+    top: 22%;
+}
+.searchd a{
+	width: 0.16rem;
+    height: 0.16rem;
+    background: url(../images/sprite_1.png) no-repeat;
+    background-size: 1.5rem 3.84rem;
+    background-position: 0 -0.22rem;
+    position: absolute;
+    right: 0.1rem;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+.mui-row.mui-fullscreen>[class*="mui-col-"] {
+				height: 100%;
+			}
+			
+			.mui-col-xs-3,
+			.mui-col-xs-9 {
+				overflow-y: auto;
+				height: 100%;
+			}
+			
+			
+			.mui-control-content {
+				display: block;
+			}
+			
+			.mui-segmented-control.mui-segmented-control-inverted .mui-control-item.mui-active {
+				background-color: #fff;
+			}
